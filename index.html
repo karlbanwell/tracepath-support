@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TracePath Studio — Privacy Policy &amp; Support Portal</title>
+  <meta name="description" content="Official Privacy Policy, Support Portal, and Documentation for TracePath Studio: Pre-Writing — pediatric occupational therapy and visual-motor integration app for iPad.">
+  <meta name="theme-color" content="#2F6F5E">
+
+  <style>
+    /* -------------------------------------------------------------------------
+       SENSORY-FRIENDLY & ACCESSIBLE STYLING
+       - WCAG AAA contrast compliance
+       - Soft, calming color palette (Muted Sage & Warm Slate)
+       - High legibility typography with native system fallbacks
+       - Reduced-motion support
+       - Zero external CDN dependencies
+    ------------------------------------------------------------------------- */
+    :root {
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --color-bg: #F8F9FA;
+      --color-surface: #FFFFFF;
+      --color-surface-subtle: #F0F4F2;
+      --color-surface-alt: #E8F0EC;
+      --color-text-main: #1D2321;
+      --color-text-muted: #4A5652;
+      --color-text-subtle: #687772;
+      --color-border: #D6E0DC;
+      --color-border-subtle: #E3EBE7;
+      
+      /* Therapeutic Sage Accent System */
+      --color-primary: #25584A;
+      --color-primary-hover: #1D453A;
+      --color-primary-light: #E7F1ED;
+      --color-accent: #3A7B68;
+      
+      /* Status / Callout Tones */
+      --color-badge-bg: #DFF0E8;
+      --color-badge-text: #194638;
+      --color-info-bg: #EAF2F8;
+      --color-info-border: #BCD5E6;
+      --color-info-text: #1A3E54;
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-soft: 0 4px 18px rgba(37, 88, 74, 0.05);
+      --shadow-card: 0 2px 10px rgba(0, 0, 0, 0.04);
+      --container-width: 920px;
+      --line-height: 1.7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg: #121615;
+        --color-surface: #1B211F;
+        --color-surface-subtle: #242B29;
+        --color-surface-alt: #2D3734;
+        --color-text-main: #EDF3F0;
+        --color-text-muted: #B3C1BC;
+        --color-text-subtle: #899B95;
+        --color-border: #35423E;
+        --color-border-subtle: #2B3532;
+        
+        --color-primary: #529E87;
+        --color-primary-hover: #67B09A;
+        --color-primary-light: #1F362F;
+        --color-accent: #67B09A;
+        
+        --color-badge-bg: #1B382F;
+        --color-badge-text: #96DFC7;
+        --color-info-bg: #1A2832;
+        --color-info-border: #2B465B;
+        --color-info-text: #B4D7EF;
+        
+        --shadow-soft: 0 4px 18px rgba(0, 0, 0, 0.35);
+        --shadow-card: 0 2px 10px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    /* Reset & Base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-family: var(--font-family);
+      font-size: 16px;
+      line-height: var(--line-height);
+      color: var(--color-text-main);
+      background-color: var(--color-bg);
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: var(--color-primary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.15s ease-in-out;
+    }
+
+    a:hover, a:focus-visible {
+      color: var(--color-primary-hover);
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--color-accent);
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    /* Header & Navigation */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .nav-container {
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--color-text-main);
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: -0.01em;
+    }
+
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #25584A, #4E9580);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 1.1rem;
+      box-shadow: 0 2px 6px rgba(37, 88, 74, 0.25);
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 0.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-link {
+      color: var(--color-text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 0.45rem 0.85rem;
+      border-radius: var(--radius-sm);
+      transition: background-color 0.15s ease, color 0.15s ease;
+    }
+
+    .nav-link:hover, .nav-link:focus-visible {
+      color: var(--color-text-main);
+      background-color: var(--color-surface-subtle);
+    }
+
+    .nav-link.nav-cta {
+      background-color: var(--color-primary-light);
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+
+    .nav-link.nav-cta:hover {
+      background-color: var(--color-primary);
+      color: #FFFFFF;
+    }
+
+    /* Main Container */
+    main {
+      flex: 1;
+      max-width: var(--container-width);
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 2.75rem 2.25rem;
+      margin-bottom: 2.5rem;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background-color: var(--color-badge-bg);
+      color: var(--color-badge-text);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      letter-spacing: 0.01em;
+    }
+
+    .badge-icon {
+      font-size: 0.9rem;
+      line-height: 1;
+    }
+
+    .hero h1 {
+      font-size: 2.15rem;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      color: var(--color-text-main);
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--color-text-muted);
+      max-width: 720px;
+      margin-bottom: 1.75rem;
+      line-height: 1.6;
+    }
+
+    .hero-quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.25rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.15s ease-in-out;
+    }
+
+    .button-primary {
+      background-color: var(--color-primary);
+      color: #FFFFFF !important;
+      box-shadow: 0 2px 6px rgba(37, 88, 74, 0.25);
+    }
+
+    .button-primary:hover, .button-primary:focus-visible {
+      background-color: var(--color-primary-hover);
+      color: #FFFFFF !important;
+      transform: translateY(-1px);
+    }
+
+    .button-secondary {
+      background-color: var(--color-surface-subtle);
+      border-color: var(--color-border);
+      color: var(--color-text-main) !important;
+    }
+
+    .button-secondary:hover, .button-secondary:focus-visible {
+      background-color: var(--color-surface-alt);
+      color: var(--color-text-main) !important;
+    }
+
+    /* Content Cards & Sections */
+    .section-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2.25rem;
+      margin-bottom: 2.5rem;
+      box-shadow: var(--shadow-card);
+      scroll-margin-top: 5.5rem;
+    }
+
+    .section-header {
+      margin-bottom: 1.75rem;
+      border-bottom: 2px solid var(--color-surface-subtle);
+      padding-bottom: 1.25rem;
+    }
+
+    .section-header h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--color-text-main);
+      letter-spacing: -0.015em;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .section-meta {
+      font-size: 0.875rem;
+      color: var(--color-text-subtle);
+      margin-top: 0.35rem;
+    }
+
+    .lead-box {
+      background-color: var(--color-primary-light);
+      border-left: 4px solid var(--color-primary);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin-bottom: 1.75rem;
+    }
+
+    .lead-box p {
+      color: var(--color-text-main);
+      font-weight: 600;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-text-main);
+      margin: 1.75rem 0 0.75rem 0;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      color: var(--color-text-muted);
+      margin-bottom: 1rem;
+    }
+
+    p strong {
+      color: var(--color-text-main);
+    }
+
+    ul, ol {
+      margin: 0.75rem 0 1.25rem 1.5rem;
+      color: var(--color-text-muted);
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      padding-left: 0.25rem;
+    }
+
+    li strong {
+      color: var(--color-text-main);
+    }
+
+    /* Privacy Nutrition Table */
+    .table-responsive {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+      text-align: left;
+    }
+
+    thead {
+      background-color: var(--color-surface-subtle);
+      border-bottom: 2px solid var(--color-border);
+    }
+
+    th {
+      padding: 0.9rem 1.1rem;
+      font-weight: 700;
+      color: var(--color-text-main);
+    }
+
+    td {
+      padding: 0.9rem 1.1rem;
+      border-bottom: 1px solid var(--color-border-subtle);
+      color: var(--color-text-muted);
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .status-pill-none {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      background-color: var(--color-badge-bg);
+      color: var(--color-badge-text);
+      white-space: nowrap;
+    }
+
+    /* Contact Box */
+    .contact-card {
+      background-color: var(--color-surface-subtle);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      margin: 1.5rem 0;
+    }
+
+    .contact-card h4 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-text-main);
+      margin-bottom: 0.5rem;
+    }
+
+    .email-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin: 0.75rem 0;
+      padding: 0.4rem 0.8rem;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+    }
+
+    .email-link:hover {
+      background: var(--color-primary-light);
+    }
+
+    .timeline-notice {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      color: var(--color-text-main);
+      font-weight: 600;
+      margin-top: 0.5rem;
+    }
+
+    .info-callout {
+      background-color: var(--color-info-bg);
+      border: 1px solid var(--color-info-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      color: var(--color-info-text);
+      margin: 1.5rem 0;
+    }
+
+    .info-callout h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      color: var(--color-info-text);
+    }
+
+    .info-callout p {
+      color: var(--color-info-text);
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-callout ul {
+      margin: 0.35rem 0 0 1.25rem;
+      color: var(--color-info-text);
+    }
+
+    /* FAQ Items */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+
+    .faq-item {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      background-color: var(--color-surface);
+      overflow: hidden;
+      transition: border-color 0.15s ease;
+    }
+
+    .faq-item:hover {
+      border-color: var(--color-accent);
+    }
+
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      padding: 1.25rem 1.5rem;
+      background: transparent;
+      border: none;
+      font-family: inherit;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-text-main);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .faq-question:focus-visible {
+      outline: 3px solid var(--color-accent);
+      outline-offset: -3px;
+    }
+
+    .faq-answer {
+      padding: 0 1.5rem 1.5rem 1.5rem;
+      color: var(--color-text-muted);
+    }
+
+    .step-list {
+      list-style: none;
+      margin: 0.75rem 0 1rem 0;
+      counter-reset: step-counter;
+      padding-left: 0;
+    }
+
+    .step-list li {
+      counter-increment: step-counter;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+      padding-left: 0;
+    }
+
+    .step-badge {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: var(--color-primary);
+      color: #FFFFFF;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.15rem;
+    }
+
+    .step-content {
+      flex: 1;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: var(--color-surface);
+      border-top: 1px solid var(--color-border);
+      padding: 2.5rem 1.5rem;
+      margin-top: auto;
+    }
+
+    .footer-container {
+      max-width: var(--container-width);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.25rem;
+      list-style: none;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-links a {
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: var(--color-primary);
+      text-decoration: underline;
+    }
+
+    .footer-copy {
+      font-size: 0.85rem;
+      color: var(--color-text-subtle);
+      line-height: 1.6;
+      max-width: 650px;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 680px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero {
+        padding: 2rem 1.5rem;
+      }
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+      .section-card {
+        padding: 1.75rem 1.25rem;
+      }
+      th, td {
+        padding: 0.75rem 0.85rem;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Accessible Navigation Header -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="#" class="brand" aria-label="TracePath Studio Home">
+        <span class="brand-icon" aria-hidden="true">T</span>
+        <span>TracePath Studio</span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#privacy" class="nav-link">Privacy Policy</a></li>
+          <li><a href="#support" class="nav-link">Support</a></li>
+          <li><a href="#faq" class="nav-link">FAQ &amp; Guides</a></li>
+          <li><a href="mailto:karlbanwell@gmail.com" class="nav-link nav-cta">Contact Clinician</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main id="main-content" role="main">
+
+    <!-- Hero / Summary Header -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-badge-row">
+        <span class="badge"><span class="badge-icon" aria-hidden="true">🛡️</span> 100% On-Device Privacy</span>
+        <span class="badge"><span class="badge-icon" aria-hidden="true">👶</span> Made for Kids (5 and under)</span>
+        <span class="badge"><span class="badge-icon" aria-hidden="true">📋</span> COPPA &amp; FERPA Compliant</span>
+        <span class="badge"><span class="badge-icon" aria-hidden="true">✏️</span> Pediatric OT &amp; SEN</span>
+      </div>
+      <h1 id="hero-title">Privacy Policy &amp; Official Support Portal</h1>
+      <p class="hero-subtitle">
+        Welcome to the official support documentation and privacy disclosures for <strong>TracePath Studio: Pre-Writing</strong> (Bundle ID: <code>com.tracepath.sensorystudio</code>) &mdash; an occupational therapy-informed pre-writing and visual-motor integration platform for iPad and iPhone.
+      </p>
+      <div class="hero-quick-links">
+        <a href="#privacy" class="button button-primary">Read Privacy Policy</a>
+        <a href="#support" class="button button-secondary">Get Support &amp; Contact</a>
+        <a href="#faq" class="button button-secondary">Clinical Guides &amp; FAQ</a>
+      </div>
+    </section>
+
+    <!-- SECTION: PRIVACY POLICY -->
+    <article id="privacy" class="section-card" aria-labelledby="privacy-heading">
+      <header class="section-header">
+        <h2 id="privacy-heading">
+          <span aria-hidden="true">🔒</span> Privacy Policy
+        </h2>
+        <div class="section-meta">
+          <strong>Application:</strong> TracePath Studio | <strong>Effective Date:</strong> October 2026 | <strong>Status:</strong> Active &amp; Fully Compliant
+        </div>
+      </header>
+
+      <div class="lead-box">
+        <p>
+          TracePath Studio operates on an uncompromising privacy principle: <strong>Zero personal data collected, zero remote analytics, zero third-party SDKs, and 100% on-device local storage.</strong> We never track, profile, monetize, or transmit your or your child&rsquo;s data.
+        </p>
+      </div>
+
+      <h3>1. Commitment to Child Privacy &amp; COPPA Compliance</h3>
+      <p>
+        TracePath Studio is intentionally engineered for early developmental learners, children ages 5 and under, neurodivergent students, and pediatric therapy clinics. We strictly comply with the <strong>Children's Online Privacy Protection Act (COPPA)</strong>, <strong>FERPA (Family Educational Rights and Privacy Act)</strong>, and <strong>GDPR-K</strong>.
+      </p>
+      <ul>
+        <li><strong>No Personal Identifiable Information (PII):</strong> We do not collect names, email addresses, phone numbers, home addresses, or physical locations. Student nicknames (e.g., &ldquo;Leo&rdquo; or &ldquo;Maya&rdquo;) created by therapists or parents are stored exclusively within the device&rsquo;s local sandboxed SwiftData database.</li>
+        <li><strong>No Account Creation or Authentication:</strong> The application requires zero logins, usernames, passwords, or third-party federated identity providers (such as Google or Apple Sign-In).</li>
+        <li><strong>Zero Camera, Microphone, or Biometric Access:</strong> The app never requests camera, microphone, contact list, or photo library permissions. Synthetic audio chimes are generated entirely in software using local audio synthesizers.</li>
+      </ul>
+
+      <h3>2. Apple &ldquo;Made for Kids&rdquo; Category Compliance (Guidelines 1.3 &amp; 5.1.4)</h3>
+      <p>
+        TracePath Studio strictly adheres to Apple App Store Review Guidelines for the <strong>Kids Category</strong>:
+      </p>
+      <ul>
+        <li><strong>Zero Third-Party Advertising:</strong> The application contains no banner ads, video reward ads, interstitial pop-ups, or affiliate marketing.</li>
+        <li><strong>Zero Analytics and Tracking SDKs:</strong> We do not bundle Google AdMob, Google Firebase, Meta SDK, Mixpanel, AppsFlyer, Unity, or any commercial telemetry engines. The app does not request <code>AppTrackingTransparency</code> permission because no cross-app or cross-device tracking occurs.</li>
+        <li><strong>Protected Clinician &amp; Parental Gate:</strong> Any access out of the child-facing studio &mdash; including Clinician Settings, Student Profile Management, StoreKit purchases, and PDF report exports &mdash; is secured behind a dual-action parental gate (requiring either a 2.0-second continuous two-finger hold or a 4-digit PIN verification). Children under 5 cannot inadvertently leave the app, make purchases, or export clinical records.</li>
+        <li><strong>No Child-Accessible External Links:</strong> There are zero hyperlinks, web browsers, or <code>WKWebView</code> instances in the child tracing canvas.</li>
+      </ul>
+
+      <h3>3. 100% On-Device Architecture &amp; Telemetry Data</h3>
+      <p>
+        During tracing exercises, the app measures fine-motor telemetry (including discrete Fréchet distance, Euclidean deviation corridor adherence, Apple Pencil pressure/tilt, and lift-off counts). 
+      </p>
+      <p>
+        <strong>All telemetry computations and storage take place 100% on-device.</strong> Telemetry exists solely to render real-time haptic/visual feedback and to generate ISO A4 progress reports for occupational therapy and IEP reviews. No metrics are ever transmitted to remote servers, cloud databases, or third parties.
+      </p>
+
+      <h3>4. App Store Connect Privacy Nutrition Label Declarations</h3>
+      <p>
+        In accordance with Apple App Store Connect disclosures, TracePath Studio is certified with the declaration: <strong>&ldquo;Data Not Collected&rdquo;</strong>.
+      </p>
+
+      <div class="table-responsive">
+        <table aria-label="Apple App Privacy Nutrition Label Declarations">
+          <thead>
+            <tr>
+              <th scope="col">Data Category</th>
+              <th scope="col">Collection Status</th>
+              <th scope="col">Linked to Identity?</th>
+              <th scope="col">On-Device Technical Implementation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Contact Info</th>
+              <td><span class="status-pill-none">Not Collected</span></td>
+              <td>No</td>
+              <td>Profiles are identified solely by local on-device SwiftData UUIDs.</td>
+            </tr>
+            <tr>
+              <th scope="row">Health &amp; Telemetry</th>
+              <td><span class="status-pill-none">Not Collected</span></td>
+              <td>No</td>
+              <td>Fréchet distance, lift-offs, and motor precision metrics remain on the iPad.</td>
+            </tr>
+            <tr>
+              <th scope="row">Financial / Payment</th>
+              <td><span class="status-pill-none">Not Collected</span></td>
+              <td>No</td>
+              <td>All in-app purchases are securely processed by Apple via StoreKit 2 APIs.</td>
+            </tr>
+            <tr>
+              <th scope="row">Location Data</th>
+              <td><span class="status-pill-none">Not Collected</span></td>
+              <td>No</td>
+              <td>Zero CoreLocation framework usage; location permissions are never requested.</td>
+            </tr>
+            <tr>
+              <th scope="row">User Content</th>
+              <td><span class="status-pill-none">Not Collected</span></td>
+              <td>No</td>
+              <td>Drawing vectors and rendered PDF reports reside exclusively in local storage.</td>
+            </tr>
+            <tr>
+              <th scope="row">Identifiers (IDFA / User ID)</th>
+              <td><span class="status-pill-none">Not Collected</span></td>
+              <td>No</td>
+              <td>No advertising IDs or device hardware fingerprints are ever accessed.</td>
+            </tr>
+            <tr>
+              <th scope="row">Usage &amp; Diagnostics</th>
+              <td><span class="status-pill-none">Not Collected</span></td>
+              <td>No</td>
+              <td>No crash analytics SDKs. Standard opt-in Apple OS crash logs remain with Apple.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>5. Data Retention &amp; User Control</h3>
+      <p>
+        Because all data is stored locally in the application&rsquo;s isolated sandbox:
+      </p>
+      <ul>
+        <li>Parents and therapists may delete individual learner profiles and drawing sessions at any time inside the protected Clinician Dashboard.</li>
+        <li>Deleting the TracePath application from your iOS device immediately and permanently purges all local databases, student records, and settings.</li>
+      </ul>
+
+      <h3>6. Contact Regarding Privacy</h3>
+      <p>
+        If you have questions, feedback, or verification inquiries regarding our privacy architecture or COPPA compliance, please contact our privacy lead directly at <a href="mailto:karlbanwell@gmail.com">karlbanwell@gmail.com</a>.
+      </p>
+    </article>
+
+    <!-- SECTION: SUPPORT PORTAL -->
+    <article id="support" class="section-card" aria-labelledby="support-heading">
+      <header class="section-header">
+        <h2 id="support-heading">
+          <span aria-hidden="true">💬</span> Support &amp; Contact Portal
+        </h2>
+        <div class="section-meta">
+          Direct Clinician &amp; Developer Support | Available for Families, Schools &amp; Clinics
+        </div>
+      </header>
+
+      <p>
+        We are dedicated to providing responsive, clinical-grade support for therapists, educators, and parents. Whether you need technical assistance, help configuring a student profile, or guidance for educational volume purchases, we are here to assist.
+      </p>
+
+      <div class="contact-card">
+        <h4>Direct Contact Channel</h4>
+        <p>Email our lead developer and release engineering team directly:</p>
+        <a href="mailto:karlbanwell@gmail.com?subject=TracePath%20Support%20Request" class="email-link">
+          <span aria-hidden="true">✉️</span> karlbanwell@gmail.com
+        </a>
+        <div class="timeline-notice">
+          <span aria-hidden="true">⏱️</span> <strong>Stated Response Timeline:</strong> Responses are provided within <strong>24 to 48 hours</strong>.
+        </div>
+      </div>
+
+      <div class="info-callout">
+        <h4>💡 Tips for Expedited Troubleshooting</h4>
+        <p>When contacting support for technical or rendering issues, including the following details helps us resolve your inquiry swiftly:</p>
+        <ul>
+          <li><strong>Device Model:</strong> (e.g., iPad Air 5th Gen, iPad Pro 11&rdquo;, iPad 10th Gen)</li>
+          <li><strong>Operating System:</strong> (e.g., iPadOS 17.5, iPadOS 18.1)</li>
+          <li><strong>App Version:</strong> (visible in Clinician Settings, e.g., Version 1.0 Build 1)</li>
+          <li><strong>Input Accessory:</strong> (e.g., Apple Pencil 2nd Gen, Apple Pencil USB-C, or Finger Touch)</li>
+        </ul>
+      </div>
+
+      <h3>Support Coverage Areas</h3>
+      <ul>
+        <li><strong>Pediatric &amp; IEP Support:</strong> Guidance on interpreting Fréchet distance telemetry, corner joint dwell times, and visual-motor synthesis scores on clinical PDF reports.</li>
+        <li><strong>Sensory &amp; CVI Accessibility:</strong> Help setting up High-Contrast Mode for Cortical Visual Impairment, selecting sensory-friendly color palettes, or adjusting motor corridors (SEN ±35pt leeway) for dyspraxia.</li>
+        <li><strong>Stylus &amp; Ergonomics Configuration:</strong> Optimizing palm rejection and switching between 1-Finger Hand Mode, Apple Pencil Stylus Mode, and Adaptive Hybrid mode.</li>
+        <li><strong>Educational &amp; Volume Licensing:</strong> Inquiries regarding Apple School Manager, bulk deployments, and MDM distribution.</li>
+      </ul>
+    </article>
+
+    <!-- SECTION: FREQUENTLY ASKED QUESTIONS & TROUBLESHOOTING -->
+    <article id="faq" class="section-card" aria-labelledby="faq-heading">
+      <header class="section-header">
+        <h2 id="faq-heading">
+          <span aria-hidden="true">❓</span> Frequently Asked Questions &amp; Troubleshooting
+        </h2>
+        <div class="section-meta">
+          Step-by-step guides for clinical reporting, offline use, and Stage 2 progression
+        </div>
+      </header>
+
+      <div class="faq-list">
+
+        <!-- FAQ 1: Exporting Clinical PDF Reports -->
+        <section class="faq-item" aria-labelledby="faq-1-q">
+          <h3 id="faq-1-q" class="faq-question">
+            <span>How do I export clinical PDF progress reports to the iPad or iPhone Files app?</span>
+            <span aria-hidden="true">📄</span>
+          </h3>
+          <div class="faq-answer">
+            <p>
+              TracePath Studio generates professional, publication-grade ISO A4 PDF progress reports tailored for IEP meetings and occupational therapy reviews. Follow these steps to generate and save a report:
+            </p>
+            <ol class="step-list">
+              <li>
+                <span class="step-badge">1</span>
+                <div class="step-content">
+                  <strong>Open Clinician Settings:</strong> From the main studio drawing view, tap the <em>Settings / Clinician Gear icon</em> located in the upper-right corner.
+                </div>
+              </li>
+              <li>
+                <span class="step-badge">2</span>
+                <div class="step-content">
+                  <strong>Pass the Dual Parental Gate:</strong> Perform a simultaneous <em>two-finger hold for 2.0 continuous seconds</em> on the screen, or enter your 4-digit clinician PIN (default: <code>2468</code>).
+                </div>
+              </li>
+              <li>
+                <span class="step-badge">3</span>
+                <div class="step-content">
+                  <strong>Select Learner Profile:</strong> Choose the student or child whose session history you wish to review.
+                </div>
+              </li>
+              <li>
+                <span class="step-badge">4</span>
+                <div class="step-content">
+                  <strong>Generate Clinical Report:</strong> Tap <strong>&ldquo;Export Clinical Report (PDF)&rdquo;</strong>. The app will immediately synthesize Fréchet accuracy, lift-offs, corner dwells, and visual synthesis metrics into an ISO A4 document.
+                </div>
+              </li>
+              <li>
+                <span class="step-badge">5</span>
+                <div class="step-content">
+                  <strong>Save to Files App:</strong> When the native iOS Share Sheet appears, select <strong>&ldquo;Save to Files&rdquo;</strong>, choose your target folder (e.g., iCloud Drive &gt; Documents &gt; TracePath Reports), and tap <strong>Save</strong>. You can also directly AirDrop or print the report.
+                </div>
+              </li>
+            </ol>
+            <p>
+              <em>Note: Reports are generated entirely on-device; no data is ever uploaded to a remote server.</em>
+            </p>
+          </div>
+        </section>
+
+        <!-- FAQ 2: Offline Operation -->
+        <section class="faq-item" aria-labelledby="faq-2-q">
+          <h3 id="faq-2-q" class="faq-question">
+            <span>Does TracePath operate 100% offline without an internet connection?</span>
+            <span aria-hidden="true">✈️</span>
+          </h3>
+          <div class="faq-answer">
+            <p>
+              <strong>Yes. TracePath Studio operates 100% offline at all times.</strong>
+            </p>
+            <p>
+              The entire application is completely self-contained. It requires zero Wi-Fi, zero cellular data, and zero cloud connectivity:
+            </p>
+            <ul>
+              <li><strong>Zero Cloud Dependencies:</strong> Stroke interpolation, haptic synthesis, and Beery VMI curriculum milestones run via local on-device Swift engines.</li>
+              <li><strong>Secure Therapy &amp; School Environments:</strong> Perfect for hospital sensory rooms, clinical environments with strict HIPAA / privacy rules, and school Wi-Fi networks with high-security firewalls.</li>
+              <li><strong>Travel Ready:</strong> Fully functional in Airplane Mode during travel, home visits, or remote therapy sessions.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- FAQ 3: Accessing Stage 2 Picture Builder -->
+        <section class="faq-item" aria-labelledby="faq-3-q">
+          <h3 id="faq-3-q" class="faq-question">
+            <span>How do I access and unlock Stage 2: Picture Builder?</span>
+            <span aria-hidden="true">🎨</span>
+          </h3>
+          <div class="faq-answer">
+            <p>
+              TracePath is organized around two developmental visual-motor stages based on the Beery VMI curriculum:
+            </p>
+            <ul>
+              <li><strong>Stage 1 (Pre-Writing Strokes):</strong> Masters the 9 foundational geometric primitives (Vertical, Horizontal, Circle, Cross, Square, Right/Left Diagonals, X, and Triangle).</li>
+              <li><strong>Stage 2 (Picture Builder &amp; Visual-Motor Synthesis):</strong> Transitions the learner from isolated strokes to constructing recognizable pictorial compositions using sequential primitives.</li>
+            </ul>
+            <p><strong>To access Stage 2:</strong></p>
+            <ol class="step-list">
+              <li>
+                <span class="step-badge">1</span>
+                <div class="step-content">
+                  From the studio navigation carousel, tap the <strong>&ldquo;Stage 2: Picture Builder&rdquo;</strong> segment at the top of the canvas selector.
+                </div>
+              </li>
+              <li>
+                <span class="step-badge">2</span>
+                <div class="step-content">
+                  Select from 4 progressive synthesis tiers:
+                  <ul style="margin-top: 0.35rem;">
+                    <li><strong>Tier 1 (Simple Associations):</strong> Sun, Balloon, Person, Flower, Tree</li>
+                    <li><strong>Tier 2 (Spatial Intersections):</strong> House, Kite, Ice Cream Cone, Sailboat</li>
+                    <li><strong>Tier 3 (Multi-Vector Synthesis):</strong> Butterfly, Snail, Rain Cloud, Car</li>
+                    <li><strong>Tier 4 (Personal Name Formation):</strong> Dynamic name composition using pre-writing primitives</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <span class="step-badge">3</span>
+                <div class="step-content">
+                  <strong>Clinician Tip:</strong> In the Clinician Dashboard, you can choose between <em>Linear Developmental Unlocking</em> (requires completion of prerequisite strokes) or <em>Open Studio Mode</em> (unlocks all Stage 1 and Stage 2 shapes immediately for differentiated therapy).
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- FAQ 4: Parental / Clinician Gate PIN -->
+        <section class="faq-item" aria-labelledby="faq-4-q">
+          <h3 id="faq-4-q" class="faq-question">
+            <span>What is the default PIN for the Therapist / Parental Gate?</span>
+            <span aria-hidden="true">🔑</span>
+          </h3>
+          <div class="faq-answer">
+            <p>
+              The factory default Clinician PIN is <code>2468</code>.
+            </p>
+            <p>
+              You do not need to memorize the PIN: you can also unlock the gate at any time by performing a <strong>2-second continuous two-finger hold</strong> on the dual touch target pads. Clinicians and parents can customize or update this PIN at any time inside Clinician Settings.
+            </p>
+          </div>
+        </section>
+
+        <!-- FAQ 5: Apple Pencil & Palm Rejection -->
+        <section class="faq-item" aria-labelledby="faq-5-q">
+          <h3 id="faq-5-q" class="faq-question">
+            <span>Does TracePath support Apple Pencil and palm rejection?</span>
+            <span aria-hidden="true">✏️</span>
+          </h3>
+          <div class="faq-answer">
+            <p>
+              <strong>Yes. TracePath Studio features active palm rejection and Apple Pencil integration:</strong>
+            </p>
+            <ul>
+              <li><strong>Apple Pencil Stylus Mode:</strong> The canvas recognizes only the pencil tip, actively ignoring resting wrists, palms, and accidental finger touches. Captures natural force pressure and azimuth tilt.</li>
+              <li><strong>Hand / Finger Mode:</strong> For younger toddlers or learners practicing finger-tracing. Employs a strict single-touch filter to ignore accidental secondary contacts.</li>
+              <li><strong>Adaptive Hybrid:</strong> Automatically transitions between Apple Pencil and finger tracing without requiring manual mode toggles.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- FAQ 6: Sensory and CVI Modes -->
+        <section class="faq-item" aria-labelledby="faq-6-q">
+          <h3 id="faq-6-q" class="faq-question">
+            <span>How do I configure High-Contrast CVI Mode or adjust motor tolerance corridors?</span>
+            <span aria-hidden="true">👁️</span>
+          </h3>
+          <div class="faq-answer">
+            <p>
+              TracePath provides neurodiversity-informed accessibility adaptations:
+            </p>
+            <ul>
+              <li><strong>Cortical Visual Impairment (CVI) Mode:</strong> Enables a pure black canvas (<code>#000000</code>) with high-chroma yellow and cyan guide corridors for learners needing high visual contrast.</li>
+              <li><strong>Adjustable Tolerance Corridors:</strong>
+                <ul>
+                  <li><em>High Tolerance (SEN Mode, &plusmn;35pt leeway):</em> Accommodates motor tremors, ataxia, and dyspraxia.</li>
+                  <li><em>Medium Tolerance (Standard, &plusmn;20pt leeway):</em> Balanced for emerging pre-writers.</li>
+                  <li><em>Precision Mode (Handwriting Prep, &plusmn;8pt leeway):</em> Refines fine-motor pencil control.</li>
+                </ul>
+              </li>
+            </ul>
+            <p>
+              Access these options at any time in the <strong>Clinician Dashboard &gt; Accessibility &amp; Sensory Preferences</strong>.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Accessible Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <ul class="footer-links">
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#support">Support Portal</a></li>
+        <li><a href="#faq">FAQ &amp; Guides</a></li>
+        <li><a href="mailto:karlbanwell@gmail.com">Contact Support</a></li>
+        <li><a href="#main-content">Back to Top &uarr;</a></li>
+      </ul>
+      <p class="footer-copy">
+        &copy; 2026 Karl Banwell &mdash; <strong>TracePath Studio</strong>. All rights reserved.<br>
+        Crafted with sensory-friendly principles for pediatric occupational therapy, neurodivergent learners, and early pre-writing discovery.<br>
+        Fully compliant with Apple App Store Review Guidelines 1.3 &amp; 5.1.4 (Kids Category), COPPA, FERPA, and GDPR-K.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
